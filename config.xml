@@ -42,7 +42,9 @@
 
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-adapt" source="npm" /> -->
     <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
-    <gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" />
+    <gap:plugin name="cordova-plugin-crosswalk-webview@1.6.0" source="npm" />
+    <!-- <gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" /> -->
+    <gap:plugin name="onesignal-cordova-plugin@1.9.0" source="npm" />
 
     <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
     <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
@@ -54,7 +56,7 @@
     <gap:plugin name="cordova-plugin-x-toast" source="npm" />
     <gap:plugin name="org.apache.cordova.statusbar" source="npm" />
 
-    <plugin name="com.onesignal.plugins.onesignal" spec="1.9.0" source="pgb" />
+    <!-- <plugin name="com.onesignal.plugins.onesignal" spec="1.9.0" source="pgb" /> -->
 
     
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
