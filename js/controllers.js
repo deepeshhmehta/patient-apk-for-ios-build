@@ -5397,6 +5397,26 @@ angular.module('PasswordConfirm', []).directive('changePasswordC', function () {
                 //$state.go('app.category-list', {}, {reload: true});
                 $state.go('app.consultations-current', {}, {reload: true});
             }
+            $scope.gotoshare = function () {
+                $ionicHistory.nextViewOptions({
+                    disableBack: true
+                });
+                window.localStorage.removeItem('startSlot');
+                window.localStorage.removeItem('endSlot');
+                window.localStorage.removeItem('prodId');
+                window.localStorage.removeItem('supid');
+                window.localStorage.removeItem('mode');
+                window.localStorage.removeItem('kookooid');
+                window.localStorage.removeItem('kookooid1');
+                window.localStorage.removeItem('coupondiscount');
+                window.localStorage.removeItem('IVendSlot');
+                window.localStorage.removeItem('IVstartSlot');
+                window.localStorage.removeItem('instantV');
+                $ionicHistory.clearCache();
+                $ionicHistory.clearHistory();
+
+                $state.go('app.category-detail', {}, {reload: true});
+            } 
         })
 
         .controller('ThankyouChatCtrl', function ($scope, $http, $state, $location, $stateParams, $rootScope, $ionicGesture, $timeout, $sce, $ionicHistory) {
@@ -5408,6 +5428,26 @@ angular.module('PasswordConfirm', []).directive('changePasswordC', function () {
             $ionicHistory.nextViewOptions({
                 disableBack: true
             });
+            $scope.gotoshare = function () {
+                $ionicHistory.nextViewOptions({
+                    disableBack: true
+                });
+                window.localStorage.removeItem('startSlot');
+                window.localStorage.removeItem('endSlot');
+                window.localStorage.removeItem('prodId');
+                window.localStorage.removeItem('supid');
+                window.localStorage.removeItem('mode');
+                window.localStorage.removeItem('kookooid');
+                window.localStorage.removeItem('kookooid1');
+                window.localStorage.removeItem('coupondiscount');
+                window.localStorage.removeItem('IVendSlot');
+                window.localStorage.removeItem('IVstartSlot');
+                window.localStorage.removeItem('instantV');
+                $ionicHistory.clearCache();
+                $ionicHistory.clearHistory();
+
+                $state.go('app.category-detail', {}, {reload: true});
+            } 
             $http({
                 method: 'GET',
                 url: domain + 'assistants/thankyou-lang',
