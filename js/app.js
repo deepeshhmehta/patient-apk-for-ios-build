@@ -460,6 +460,34 @@ angular.module('your_app_name', [
                         }
                     })
 
+                    .state('app.reminder-summary', {
+                        cache: false,
+                        url: "/reminder-summary",
+                        views: {
+                            'menuContent': {
+                                templateUrl: function () {
+                                    return "views/app/reminder-summary.html";
+                                },
+                                //controller: 'reminderRecentCtrl'
+                                controller: 'reminderSummaryCtrl'
+                            }
+                        }
+                    })
+
+                    .state('app.reminder-summary-details', {
+                        cache: false,
+                        url: "/reminder-summary-details",
+                        views: {
+                            'menuContent': {
+                                templateUrl: function () {
+                                    return "views/app/reminder-summary-details.html";
+                                },
+                                //controller: 'reminderRecentCtrl'
+                                controller: 'reminderSummaryDetailsCtrl'
+                            }
+                        }
+                    })
+
                     .state('app.edit-record', {
                         url: "/edit-record/{id:int}/{cat:int}",
                         views: {

@@ -9539,6 +9539,22 @@ input, button, select, textarea,.tab-item
     text-overflow: inherit !important;
   }
 
+.yellowfont{
+  color:#FFC300;
+}
+
+.redfont{
+  color:#B62E0C;
+}
+
+.greenfont{
+  color: #49CB0C;
+}
+
+.fontcenter{
+  text-align: center;
+}
+
 
 
 
